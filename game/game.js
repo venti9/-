@@ -24,9 +24,9 @@ function addItems() {
   createItem(650, 250, 'coin');
   createItem(225, 200, 'coin');
   createItem(375, 100, 'poison');
-  createItem(370, 500,'poison');
+  createItem(370,500,'poison');
   createItem(100, 375, 'poison');
-  createItem(125, 60, 'star');
+  createItem(125, 50, 'star');
 }
 
 // add platforms to the game
@@ -67,9 +67,9 @@ function itemHandler(player, item) {
   if (item.key === 'coin') {
      currentScore = currentScore + 10;
   } else if (item.key === 'poison') {
-     currentScore = currentScore 0;
+     currentScore = currentScore - 25;
   } else if (item.key === 'star') {
-     currentScore = currentScore + 50;
+     currentScore = currentScore + 25;
   }
   if (currentScore === winningScore) {
       createBadge();
@@ -149,7 +149,7 @@ window.onload = function () {
     if (jumpButton.isDown && (player.body.onFloor() || player.body.touching.down)) {
       player.body.velocity.y = -400;
     }
-    // when the player win the game
+    // when the player winw the game
     if (won) {
       winningMessage.text = "YOU WIN!!!";
     }
