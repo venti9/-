@@ -27,6 +27,7 @@ function addItems() {
   createItem(370, 500,'poison');
   createItem(100, 375, 'poison');
   createItem(125, 50, 'star');
+  createItem(700, 250, 'star');
 }
 
 // add platforms to the game
