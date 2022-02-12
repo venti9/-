@@ -152,7 +152,7 @@ window.onload = function () {
       player.body.velocity.y = -400;
     }
     // when the player winw the game
-    if (won) {
+    if (currentScore = winningScore) {
       winningMessage.text = "YOU WIN!!!";
     }
   }
